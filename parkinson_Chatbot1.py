@@ -10,10 +10,10 @@ from langchain_community.llms import OpenAI
 import os
 from langchain.chains.question_answering import load_qa_chain
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "--Enter OpenAI Key--"
 
 try:
-    pdf_reader = PdfReader(r"C:\Users\aiwin\OneDrive\Desktop\Hub\P5_Parkinson\P5_Parkinson\Parkinson_pdf.pdf")
+    pdf_reader = PdfReader(r"--PDF Path--")
     raw_text = ''
     for i, page in enumerate(pdf_reader.pages):
         content = page.extract_text()
